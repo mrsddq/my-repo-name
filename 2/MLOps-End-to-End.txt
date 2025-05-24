@@ -25,4 +25,15 @@ Ops
     monitoring
     retrain
 
- 
+Machine Learning
+    supervised
+        training
+        validation(pipeline)/testing/inferencing
+    unsupervised
+
+    reinforcement
+
+data => data validation => FE(Feature Engineering) => model training => model evaluation
+
+data => data validation => FE(Feature Engineering) => model evaluation
+
