@@ -1,0 +1,9 @@
+two important aspect of mlops are experiment tracking and model registry
+mlflow - is an open source platform to manage the ml lifecycle, including experimentation, reproducibility, deployment, and a central model registry.
+mlflow
+------
+
+    mlfow tracking - records a query experiments: code,data,config, and results.
+    mlflow projects - package data science code in a format to reproduce runs on any platform
+    mlflow models - deploy machine learning models in diverse serving environments
+    model registry - store, annotate, discover, and manage models in a central repository.

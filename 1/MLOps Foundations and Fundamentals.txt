@@ -1,0 +1,151 @@
+1.Basic of ML(Machine Leaarning)/DL(Deep Learning)
+2.Basic of the Python
+
+SDLC
+DevOps
+MLOps
+
+1. planning and requirement
+2. design
+3. building | dev
+4. testing
+5. deployment
+
+SDLC Methodologies
+------------------
+1. waterfall
+    requirement
+    design
+    development
+    testing
+    deployment
+    maintainance
+
+2.  agile
+    iterative
+
+development
+------------
+    dev - java/pthon/PHP, git & github
+    testing - selenium,UT,manual testing,UAT
+    QA - sonarqube
+
+operations
+----------
+    delivery - Docker=>Kubernetes,Jenkins,CircleCI,TravisCI
+    deployment  - 
+    maintainance and monitoring - 
+
+DevOps
+------
+agile
+  +
+dev+ops
+
+ML
+    regression
+    classification
+DL
+    vision
+    nlp
+
+APP
+
+MLOps
+ML+Ops
+ML - machine learning
+    data/requirement gathering
+    data validation
+    EDA - 
+    feature engineering
+    model building/model evaluation
+
+Ops - Operation
+
+Recap
+-----
+MLOps - building a ML app and responsible for maintaining the enitre pipelines - agile methodology
+^
+DevOps - agile methodology
+^
+SDLC
+
+=====
+
+ML APP
+------
+build - python - local/vs-code, git/local-repository
+testing - uni testing, integration testing, UAT
+delivery - containerization, docker/image, kubernetes 
+deployment - container, AWS
+monitoring and maintainance
+
+Cloud Services
+--------------
+Amazon
+Azure
+GCP
+
+MLOps
+-----
+Git
+CircleCI
+Terraform
+Ansible
+Dockerhub
+
+CI/CDelivery/CDeployment
+development - local
+testing - 
+QA
+delivery - CD 
+deployment - CD
+monitoring and maintainance
+
+CT - continuous training with airflow
+
+MLOps - CI/CD/CD/CT
+
+===============================================================
+
+Assignment
+----------
+1.
+What is MLOps?
+
+2.
+Explain the key differences between MLOps and DevOps.
+
+3.
+What are the core components of MLOps?
+
+4.
+Discuss the importance of version control in MLOps.
+
+5.
+How does continuous integration and continuous deployment (CI/CD) relate to MLOps?
+
+6.
+Explain the concept of model drift and its impact on MLOps.
+
+7.
+Discuss the challenges of reproducibility in MLOps and potential solutions.
+
+8.
+Compare and contrast the use of traditional software testing with testing in MLOps.
+
+9.
+What role does containerization play in MLOps workflows?
+
+10.
+Explain the significance of model monitoring in MLOps.
+
+
+11.
+How does MLOps address the challenges of model governance and compliance?
+
+12.
+Discuss the concept of feature engineering and its role in MLOps.
+
+13.
+Explain the importance of automated testing in MLOps pipelines.
