@@ -1,0 +1,61 @@
+ml keywords and concepts
+========================
+    feature
+    label
+    labeled example
+    unlabeled example
+    inference
+    loss
+    prediction
+    training
+    data
+    model
+    training
+    evaluating
+
+feature
+    features(x)
+        one which helps to define an example
+            ex: bedroom(3,2,1),city(bengaluru),facing(east|west|north|south)
+label
+    label(y)
+        you will use feature(x) and predict or find the value of label(y)
+            ex: price of the 3-bedroom apartment in bengaluru, mg road east facing?
+model
+    in supervised learning, we use features and labels in training a piece of software, called a model, to make useful predictions from data.
+        labeled example:
+            time until first engine overhaul
+            annual miles driven
+            average load weight
+            average driving speed
+            oil change interval
+        unlabeled example:
+            time until first engine overhaul
+            annual miles driven
+            average load weight
+            average driving speed
+training and loss:
+    loss function=(y-y')
+        a loss curve plot training loss vs the number of iterations
+        a loss curve provides the following hints about training
+            a downward slope implies that the model is improving
+            an upward slope implies that the model is getting worse
+            a flat slope implies that the model has reached convergence
+            RSME - root square mean error
+        continous training:
+            iteration = epoch
+            changes in the datasets
+            changes in the codes
+        overtraining = overtraining
+        garbage in, garbage out
+splitting data into:
+    a 100% data of people taking loan:
+        training data - 80%
+        test data - 20%
+    
+
+
+
+        
+
+
