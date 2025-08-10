@@ -56,7 +56,7 @@ ML+Ops
 ML - machine learning
     data/requirement gathering
     data validation
-    EDA - 
+    Exploratory Data Analysis (EDA) - 
     feature engineering
     model building/model evaluation
 
@@ -105,6 +105,29 @@ monitoring and maintainance
 CT - continuous training with airflow
 
 MLOps - CI/CD/CD/CT
+
+MLOps cycle
+===========
+source
+build
+train
+model
+registry
+
+CI - 30%
+==
+data prep
+develop
+re-train
+review
+EDA
+
+CD - 70&
+==
+deployment
+inference
+monitoring
+EDA
 
 ===============================================================
 

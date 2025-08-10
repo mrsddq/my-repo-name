@@ -37,3 +37,8 @@ data => data validation => FE(Feature Engineering) => model training => model ev
 
 data => data validation => FE(Feature Engineering) => model evaluation
 
+intro
+structure
+python package => pypi
+mongodb(database) => CI -github action, github page
+

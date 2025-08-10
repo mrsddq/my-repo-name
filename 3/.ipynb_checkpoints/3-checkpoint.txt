@@ -1,0 +1,5 @@
+switching
+ip link => eth0
+ping
+ip addr add 0.0.0.0 eth0
+routing
