@@ -51,14 +51,14 @@ def main():
     rmse = root_mean_squared_error(y_test, y_pred)
     print(f"Root Mean Squared Error (RMSE): {rmse}")    
 
-    # User input prediction
-    try:
-        rooms = int(input("Enter number of rooms: "))
-        sqft = int(input("Enter square footage: "))
-        user_pred = predict_price(model, rooms, sqft)
-        print(f"Predicted Rental Price for {rooms} rooms with {sqft} sqft is: {user_pred}")
-    except ValueError:
-        print("Invalid input. Please enter integer values.")
+    # # User input prediction
+    # try:
+    #     rooms = int(input("Enter number of rooms: "))
+    #     sqft = int(input("Enter square footage: "))
+    #     user_pred = predict_price(model, rooms, sqft)
+    #     print(f"Predicted Rental Price for {rooms} rooms with {sqft} sqft is: {user_pred}")
+    # except ValueError:
+    #     print("Invalid input. Please enter integer values.")
 
 if __name__ == "__main__":
     main()

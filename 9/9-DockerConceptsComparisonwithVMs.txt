@@ -1,0 +1,98 @@
+docker components:
+==================
+    docker image
+        the basis of a docker container. represents a full apllication
+    docker container
+        the standard unit in which the application service reside and executes
+    docker engine
+        creates, ships and runs docker containers deployable on a physical or virtual, host locally, in a datacenter or cloud service provider
+    registry service
+        docker hub (public)
+        docker trusted registry (peivate)
+        cloud or server based storage and distribution service for your images
+
+dockerfile
+    a dockerfile is a text document.
+    it contains all commands a user could call on the command line to assemble an image.
+    docker can build image automatically by reading the instructions from a dockerfile.
+
+docker commands
+    FROM
+        set the base image for the new image that you want to create
+        the FROM instruction will initialize the new build-stage and must be located at the top of the dockerfile
+        needs to be the first instruction of every dockerfile
+            usage: FROM <image>
+    LABEL
+        with this instruction, you can add additional information about your docker image, such as the version, description, maintainer etc.
+        the LABEL instruction is a key value pair that allows you to add multiple label and multiple-line values
+            usage: LABEL <image>
+            ex:
+                LABEL version="1.0"
+                LABEL description="this is a statement"
+    ENV
+        the ENV instruction is used to define an environment variable that can be used during the build stage and can be replaced inline in many as well
+            usage:
+                ENV <key>=<value>
+            ex:
+                ENV my_name="john doe"
+                ARG DEBIAN_FRONTEND=noninteractive
+                RUN apt-get update && apt-get install
+    ADD
+        the ADD instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>
+            usage:
+                ADD <src><dest>
+                ADD [<src>,...,<dest>]
+            ex:
+                ADD home*/mydir/
+                ADD test.txt /relativeDir/
+                ADD requirement.txt /laraib/home/myapp
+    COPY
+        the COPY instruction new files or directories from <src> and adds them to the filesystem of the container at the path <dest>
+            usage:
+                COPY <src><dest>
+                COPY [<src>,...,<dest>]
+            ex:
+                COPY home*/mydir/
+                COPY test.txt /relativeDir/
+                COPY requirement.txt /laraib/home/myapp
+    RUN
+        executes any commands on the current image and commit the results
+            usage:
+                RUN <command>
+                RUN ["executables","param1","param2"]
+            ex:
+                RUN apt-get update -y
+                RUN ["/bin/bash","-c","echo hello"]
+    CMD
+        the CMD instruction is used to define the default command to execute when running the container
+        and the Dockerfile must only contain one CMD instruction, and if there are multiple CMD, the last CMD instruction will run.
+            usage:
+                CMD ["executables","param1","param2"]
+                CMD ["param1","param2"]
+                CMD command param1 param2
+            ex:
+                FROM ubuntu
+                CMD echo "This is a test." | wc-
+    ENTRYPOINT
+        the ENTRYPOINT instruction is used to define the first and default command that will be executed when the container is running
+        define the command to start your application with the ENTRYPOINT
+            usage:
+                ENTRYPOINT ["executables","param1","param2"] (exec from)
+                ENTRYPOINT <command> param1 param2
+                ex:
+                    ENTRYPOINT echo "This is my entrypoint in my container"
+                    ENTRYPOINT echo ["wc","-l"]
+            
+docker ADD
+    ADD <src><dest>
+        ADD https://google.com/bar.gp/tmp/main.go
+        ADD http://google.com/bar.go/tmp/
+        ADD /google.com/tmp/
+    in this case, a file named /tmp/bar.go will be added to the containers filesystem
+    if the <src> argument is a local file in a recognized compression format (tar, gzip, bzip2, etc.)then it is unpacked at the specified <dest> in the container's filesystem
+
+docker COPY
+    COPY <src><dest>
+    COPY doesn't support URLs as a <src> argument so it can't be used to download files from remote locations
+    anything that you want to COPY into the container must be present in the local build context
+
