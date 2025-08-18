@@ -21,4 +21,6 @@ kubectl describe pod <pod-id>
 kubectl delete svc <service-name>
 
 # interactive shell access to a running pod (1 container case)
-kubectl exec --stdin --tty my-pod -- /bin/sh        
+kubectl exec --stdin --tty my-pod -- /bin/sh
+
+https://kubernetes.io/docs/reference/kubectl/quick-reference/
