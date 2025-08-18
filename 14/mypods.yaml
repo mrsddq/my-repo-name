@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: predict_rental_app
+  label: predict_rental_app
+spec:
+  containers:
+  - name: predict_rental_myapp_container
+    # Docker image from the Docker Hub
+    image: mrsddq/mlapp_predict_rental:latest
+    ports:
+    - containerPort: 80
+

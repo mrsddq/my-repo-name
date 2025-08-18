@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlapp_predict_rental
+  userpodlabel: mlapp_predict_rental
+
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      userpodlabel: mrsddq_mlapp_predict_rental
+
+  template:
+    metadata:
+      labels:
+        userpodlabel: mrsddq_mlapp_predict_rental
+    spec:
+      containers:
+      - name: mlapp_predict_rental_container
+        image: mrsddq/mlapp_predict_rental:latest
+        # Docker image from the Docker Hub
+        ports:
+        - containerPort: 80
